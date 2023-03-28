@@ -3,7 +3,6 @@ services:
   tavernai:
     build: ..
     container_name: tavernai
-    hostname: tavernai
     image: tavernai/tavernai:latest
     network_mode: "container:gluetun"
     #ports:
