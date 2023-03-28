@@ -23,7 +23,6 @@ const ipaddr = require('ipaddr.js');
 const tiktoken = require('@dqbd/tiktoken');
 
 const config = require(path.join(process.cwd(), './config.conf'));
-const server_port = config.port;
 const whitelist = config.whitelist;
 const whitelistMode = config.whitelistMode;
 const autorun = config.autorun;
@@ -34,7 +33,7 @@ var Client = require('node-rest-client').Client;
 var client = new Client();
 
 var api_server = "";//"http://127.0.0.1:5000";
-//var server_port = 8000;
+var server_port = 8005;
 
 var api_novelai = "https://api.novelai.net";
 var api_openai = "https://api.openai.com/v1";
