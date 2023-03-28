@@ -2,7 +2,7 @@ version: "3"
 services:
   tavernai:
     build: ..
-    container_name: tavernai
+    #container_name: tavernai
     image: tavernai/tavernai:latest
     network_mode: "container:gluetun"
     #ports:
